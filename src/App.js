@@ -28,7 +28,7 @@ children: [
     }
   ])
   return (
-    <div className="mx-32 my-5">
+    <div className="mx-32 my-5 App">
        
       <RouterProvider router={router}></RouterProvider>
     </div>
