@@ -1,0 +1,10 @@
+.navs a{
+    
+    padding-right: 10px;
+    padding: 10px;
+    font-weight:600;
+}
+.navs a:hover{
+   color: #007791;
+    
+}
