@@ -9,7 +9,7 @@ const Quizzes = () => {
     const {name, questions} = data;
     return (
         <div className='mt-10'>
-            <h2 className='text-2xl font-bold text-white'>Quiz of {name}</h2>
+            <h2 className='text-3xl font-bold text-white'>Quiz of {name}</h2>
             <div>
                 {
                     questions.map(questionn => <Question
