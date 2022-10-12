@@ -4,11 +4,10 @@ import 'react-toastify/dist/ReactToastify.css'
 import { EyeIcon } from '@heroicons/react/24/solid'
 
 const Question = ({ questionn }) => {
-    const { question, correctAnswer, options, id } = questionn;
-    console.log(options);
+    const { question, correctAnswer, options} = questionn;
 
     const validation = (value) => {
-        console.log(value);
+        
         if (value === correctAnswer) {
             toast.success("Correct!!")
         }
@@ -24,7 +23,7 @@ const Question = ({ questionn }) => {
         <div className='mt-10'>
             <div className=' bg-white rounded-lg shadow-lg border'>
                 <div>
-                    <h1 className='font-bold text-2xl p-5 text-cyan-600 '>{question.slice(3, -4)}</h1>
+                    <h1 className='font-bold text-2xl p-5 text-cyan-600 '> {question.slice(3, -4)}</h1>
                     <button onClick={() => seeCorrectAnswer()}><EyeIcon className="h-6 w-6 text-cyan-600" /></button>
                 </div>
 
