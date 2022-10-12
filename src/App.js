@@ -28,6 +28,7 @@ function App() {
 
         {
           path: 'statistics',
+          loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statistics></Statistics>,
         },
         {
@@ -40,7 +41,7 @@ function App() {
     { path: '*', element: <div className='text-white font-bold text-2xl'>This Route not Found 4O4!</div> }
   ])
   return (
-    <div className="mx-32 my-5 App">
+    <div className="mx-10 lg:mx-32 my-5 App">
 
       <RouterProvider router={router}></RouterProvider>
     </div>

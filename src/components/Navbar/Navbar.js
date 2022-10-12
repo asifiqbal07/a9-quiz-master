@@ -4,9 +4,9 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (
-        <nav className='flex justify-between items-center '>
+        <nav className='lg:flex justify-between items-center '>
             <h1 className='font-bold text-3xl text-white'>Quiz Master</h1>
-            <div className='navs'>
+            <div className='navs flex flex-col lg:flex-row'>
             <Link to='/'>Topics</Link>
             <Link to='/statistics'>Statistics</Link>
             <Link to='/blog'>Blog</Link>
