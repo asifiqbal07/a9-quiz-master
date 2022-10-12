@@ -6,7 +6,6 @@ import Topic from '../Topic/Topic';
 const Topics = () => {
     const topics = useLoaderData();
     const { data } = topics;
-    console.log(topics);
     return (
         <div className='mt-16 '>
             <Header></Header>
