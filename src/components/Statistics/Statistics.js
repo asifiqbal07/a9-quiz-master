@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
+import './Statistics.css';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
 
 const Statistics = () => {
@@ -24,10 +25,11 @@ axios.get('https://openapi.programming-hero.com/api/quiz')
 });
     },[])
     return (
-        <div className='mt-16 bg-white'>
+        <div className='mt-16 bg-white chart'>
             <h2 className='text-cyan-600 text-2xl font-bold p-2'>Total Quizzes Chart</h2>
-            <div className='text-white w-full mt-5 pb-5'>
-            <LineChart className='text-white' width={500} height={400} data={allData}>
+            
+            <div className='text-white w-50 lg:w-full mt-5 pb-5'>
+            <LineChart className='text-white w-1' width={500} height={400} data={allData}>
             <Line type="monotone" dataKey="total" stroke="#82ca9d" />
             <XAxis dataKey="name" />
           <YAxis dataKey="total"/>

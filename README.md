@@ -1,3 +1,34 @@
+# Readme information for the assignment
+
+Project Name: Quiz Master
+
+Github Link: https://github.com/programming-hero-web-course2/b6-quiz-crackerz-asifiqbal07
+
+# Special features of the website-
+
+*I added a website related back-ground images.
+*I added the react toaster on the Correct, Incorrect and Show Answer section.
+*I used Tailwind css for the project.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
