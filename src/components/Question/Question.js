@@ -1,10 +1,12 @@
 import React from 'react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import { EyeIcon } from '@heroicons/react/24/solid'
 
 const Question = ({ questionn }) => {
     const { question, correctAnswer, options, id } = questionn;
     console.log(options);
+
     const validation = (value) => {
         console.log(value);
         if (value === correctAnswer) {
@@ -15,12 +17,16 @@ const Question = ({ questionn }) => {
         }
 
     }
+    const seeCorrectAnswer = (answer) => {
+        toast.info(correctAnswer)
+    }
     return (
         <div className='mt-10'>
             <div className=' bg-white rounded-lg shadow-lg border'>
-               <div>
-               <h1 className='font-bold text-2xl p-5 text-cyan-600 '>{question.slice(3, -4)}</h1>
-               </div>
+                <div>
+                    <h1 className='font-bold text-2xl p-5 text-cyan-600 '>{question.slice(3, -4)}</h1>
+                    <button onClick={() => seeCorrectAnswer()}><EyeIcon className="h-6 w-6 text-cyan-600" /></button>
+                </div>
 
                 <div className='p-4'>
                     {
@@ -32,7 +38,7 @@ const Question = ({ questionn }) => {
                     }
                     <ToastContainer
                         position="top-center"
-                        autoClose={1000}
+                        autoClose={2000}
                         hideProgressBar={false}
                         newestOnTop={false}
                         closeOnClick
