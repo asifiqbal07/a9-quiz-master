@@ -3,28 +3,13 @@
 Project Name: Quiz Master
 
 Github Link: https://github.com/programming-hero-web-course2/b6-quiz-crackerz-asifiqbal07
+Live Link: https://quiz-master-site.netlify.app/
 
 # Special features of the website-
 
-*I added a website related back-ground images.
-*I added the react toaster on the Correct, Incorrect and Show Answer section.
-*I used Tailwind css for the project.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
++ I added a website related back-ground images.
++ I added the react toaster on the Correct, Incorrect and Show Answer section.
++ I used Tailwind css for the project.
 
 
 
